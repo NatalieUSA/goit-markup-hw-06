@@ -564,7 +564,7 @@ HEADER^^^^^^^ */
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px; 
+  gap: 30px;
 }
 
 /* .gallery-list {
@@ -790,4 +790,134 @@ HEADER^^^^^^^ */
 .modal-btn:hover .modal-icon,
 .modal-btn:focus .modal-icon {
   fill: var(--btn-hover-cl);
+}
+
+/* FORM */
+.register-form {
+  padding: 40px;
+}
+
+.register-form strong {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-txt-cl);
+
+  outline: 1px solid rgb(5, 219, 16);
+}
+
+.register-form-group {
+  width: 100%;
+  margin-bottom: 20px;
+
+  border: 1px solid hotpink;
+}
+
+.register-form-group label {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form-group span {
+  margin-bottom: 4px;
+}
+
+.register-form-group span {
+  color: #757575;
+}
+
+.register-form-group span,
+.register-form-textarea ::placeholder {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+}
+.register-form-group input {
+  width: 100%;
+  height: 40px;
+}
+/* .register-form-group input:nth-child(4) {
+  margin-bottom: 10px;
+} */
+
+.register-form-group input,
+.register-form-textarea textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: border-color var(--duration) var(--timing-function);
+
+}
+.register-form-group input:hover,
+.register-form-group input:focus,
+.register-form-textarea textarea:hover,
+.register-form-textarea textarea:focus {
+  border-color: crimson;
+}
+
+
+/* textarea */
+ .register-form-textarea textarea {
+  resize: none;
+  /* width: 100%; */
+} 
+.register-form-textarea ::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  padding: 12px 16px;
+  outline: 1px solid rgb(219, 205, 5);
+}
+
+/* checkbox */
+.register-form-checkbox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;}
+.register-form-checkbox span {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #757575;
+  
+}
+.register-form-checkbox a {
+  color: aqua;
+}
+
+.register-form-checkbox input[type="checkbox"] {
+  /* для стилизации иконки */
+}
+
+/* form button */
+.register-form-button {
+  width: 200px;
+  height: 50px;
+  background-color: #188ce8;
+  color: #ffffff;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+
+  cursor: pointer;
+  outline: 1px solid rgb(169, 5, 219);
+
+  position: absolute;
+  /* bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
 }
