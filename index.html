@@ -622,50 +622,51 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+        <!-- form -->
         <form class="register-form" name="register-form">
-          <strong class=""
+          <strong class="register-form-title"
             >Залиште свої дані, ми вам передзвонимо</strong
           >
           <div class="register-form-group" role="group">
-            <label class="">
-              <span class="register-form-name">Ім'я</span>
+            <label class="register-form-field">
+              <span class="register-form-label">Ім'я</span>
               <input
                 class="register-form-input"
                 type="text"
                 name="name"
-                autofocus
                 required
+                minlength="3"
               />
-              <svg widht="18" height="18">
+              <svg class="register-form-icon" widht="18" height="18">
                 <use href="./images/icons.svg#person"></use>
               </svg>
             </label>
 
-            <label class="register-form-label">
-              <span class="register-form-name">Телефон</span>
-              <input
-                class="register-form-input"
-                type="tel"
-                name="tel"
-                autocomplete="on"
-              />
-              <svg widht="18" height="18">
+            <label class="register-form-field">
+              <span class="register-form-label">Телефон</span>
+              <input class="register-form-input" type="tel" name="tel" />
+              <svg class="register-form-icon" widht="18" height="18">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
             </label>
 
-            <label class="">
-              <span class="register-form-name">Пошта</span>
-              <input class="register-form-input" type="email" name="email" />
-              <svg widht="18" height="18">
+            <label class="register-form-field">
+              <span class="register-form-label">Пошта</span>
+              <input
+                class="register-form-input"
+                type="email"
+                name="email"
+                required
+              />
+              <svg class="register-form-icon" widht="18" height="18">
                 <use href="./images/icons.svg#email"></use>
               </svg>
             </label>
 
-            <label class="register-form-textarea">
-              <span class="register-form-name">Коментар</span>
+            <label class="register-form-field">
+              <span class="register-form-label">Коментар</span>
               <textarea
-                class=""
+                class="register-form-massage"
                 name="comment"
                 rows="5"
                 placeholder="Введіть текст"
@@ -673,15 +674,28 @@
             </label>
           </div>
 
-          <label class="register-form-checkbox">
-            <input type="checkbox" name="checkbox" />
-            <span class=""
+          <label class="register-form-agreement">
+            <input
+              class="register-form-checkbox visually-hidden"
+              type="checkbox"
+              name="checkbox"
+            />
+            <svg class="register-form-icons" widht="16" height="15">
+              <use class="icon-checked" href="./images/icons.svg#check"></use>
+              <use
+                class="icon-unchecked"
+                href="./images/icons.svg#uncheck"
+              ></use>
+            </svg>
+            <span class="register-form-desc"
               >Погоджуюся з розсилкою та приймаю
-              <a class="checkbox-dogovor" href="">Умови договору</a></span
+              <a class="register-form-link" href="" target="_blank"
+                >Умови договору</a
+              ></span
             >
           </label>
 
-          <button class="register-form-button" type="submit">
+          <button class="register-form-btn" type="submit">
             <span>Відправити</span>
           </button>
         </form>
