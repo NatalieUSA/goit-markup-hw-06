@@ -635,6 +635,7 @@ HEADER^^^^^^^ */
 .footer-container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between
 }
 
 .contacts {
@@ -682,7 +683,12 @@ HEADER^^^^^^^ */
   color: var(--footer-link-cl);
 }
 
-.join-title {
+.join {
+  width: 206px;
+  margin-right: 93px; 
+}
+.join-title,
+.subscribe-form-title {
   display: flex;
   color: var(--hero-txt-cl);
   font-weight: 700;
@@ -720,6 +726,89 @@ HEADER^^^^^^^ */
   background-color: var(--btn-hover-cl);
 }
 
+
+.subscribe-form-field {
+  display: flex;
+  margin-right: 12px;
+}
+
+.subscribe-form-input {
+  height: 50px;
+  width: 358px;
+  padding-left: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: var(--box-shadow-button);
+  border-radius: var(--border-radius-button);
+  /* outline: transparent; */
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--btn-txt-cl);
+
+  transition: border-color var(--duration) var(--timing-function);
+}
+
+.subscribe-form-input:hover,
+.subscribe-form-input:focus {
+  border-color: var(--accent-bcg-cl);
+}
+
+.subscribe-form-input::placeholder {
+  display: flex;
+  align-items: center;
+
+  font-size: 16px;
+  line-height: calc(20/16);
+  letter-spacing: 0.03em;
+  color: var(--footer-link-cl);
+}
+
+.subscribe-form-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 28px;
+  width: 24px;
+  fill: var(--btn-txt-cl);
+}
+
+.subscribe-form-btn {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  padding-left: 28px;
+ 
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-txt-cl);
+  color: var(--btn-txt-cl);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+
+  box-shadow: var(--box-shadow-button);
+  border-radius: 4px;
+  border-style: none;
+
+  cursor: pointer;
+
+  transition: background-color var(--duration) var(--timing-function);
+  
+}
+.subscribe-form-btn:hover,
+.subscribe-form-btn:focus {
+  background-color: var(--btn-hover-cl);}
+
+.subscribe-group {
+  display: flex;
+}
+
+
+
+
 /* MODAL WINDOW */
 .backdrop {
   position: fixed;
@@ -732,7 +821,7 @@ HEADER^^^^^^^ */
   opacity: 1;
   visibility: visible;
   transition: opacity var(--duration) var(--timing-function),
-    visibility var(--duration) var(--timing-function);
+  visibility var(--duration) var(--timing-function);
 }
 
 .backdrop.is-hidden {
@@ -796,6 +885,7 @@ HEADER^^^^^^^ */
 }
 
 /* FORM */
+
 .register-form-title {
   display: block;
   text-align: center;
@@ -821,6 +911,7 @@ HEADER^^^^^^^ */
 .register-form-field:not(:last-child) {
   margin-bottom: 10px;
 }
+
 .register-form-label {
   display: block;
   margin-bottom: 4px;
@@ -848,9 +939,12 @@ HEADER^^^^^^^ */
 .register-form-input:hover,
 .register-form-input:focus,
 .register-form-massage:hover,
-.register-form-massage:focus {
+.register-form-massage:focus,
+.register-form-icons:focus {
   border-color: var(--accent-bcg-cl);
+
 }
+
 .register-form-icons,
 .register-form-icon {
   width: 18px;
@@ -955,3 +1049,4 @@ HEADER^^^^^^^ */
 .register-form-btn:focus {
   background-color: var(--btn-hover-cl);
 }
+
