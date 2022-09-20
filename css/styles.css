@@ -945,10 +945,10 @@ HEADER^^^^^^^ */
 
 }
 
-.register-form-icons,
+/* .register-form-icons,
 .register-form-icon {
   width: 18px;
-}
+} */
 .register-form-icon {
   position: absolute;
   bottom: 3%;
